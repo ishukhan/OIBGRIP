@@ -61,6 +61,7 @@ input#search {
   border: none;
 }
 
+
 input#search::placeholder {
   font-weight: 700;
 }
