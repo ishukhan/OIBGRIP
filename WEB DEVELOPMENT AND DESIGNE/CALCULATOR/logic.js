@@ -18,9 +18,7 @@ function DeleteDigit() {
     } else {
         let value = document.getElementById('result').value
         document.getElementById('result').value = value.toString().slice(0, -1)
-
     }
-
 }
 
 //This functuion to calcultate all the input in this calculator
