@@ -23,7 +23,6 @@ function DisplayDate() {
 }
 
 
-
 //CREATE A NEW ITEM AND PUSH THE LOACL STORAGE
 document.querySelector('#enter').addEventListener('click', () => {
     const item = document.querySelector("#item")
