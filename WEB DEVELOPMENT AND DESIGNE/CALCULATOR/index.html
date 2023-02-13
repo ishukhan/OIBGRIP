@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" type="image/x-icon" href="/image/calculator.png">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <div class="containor">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="Display" id="result" disabled>
+                </div>
+                <div>
+                    <input type="button" value="AC" id="operator" onclick="DisplayClear()">
+                    <input type="button" value="DE" id="operator" onclick="DeleteDigit()">
+                    <input type="button" value="." id="operator" onclick="DisplayDigit('.')">
+                    <input type="button" value="/" id="operator" onclick="DisplayDigit('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="DisplayDigit(7)">
+                    <input type="button" value="8" onclick="DisplayDigit(8)">
+                    <input type="button" value="9" onclick="DisplayDigit(9)">
+                    <input type="button" value="*" id="operator" onclick="DisplayDigit('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="DisplayDigit(4)">
+                    <input type="button" value="5" onclick="DisplayDigit(5)">
+                    <input type="button" value="6" onclick="DisplayDigit(6)">
+                    <input type="button" value="-" id="operator" onclick="DisplayDigit('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" id="one" onclick="DisplayDigit(1)">
+                    <input type="button" value="2" onclick="DisplayDigit(2)">
+                    <input type="button" value="3" onclick="DisplayDigit(3)">
+                    <input type="button" value="+" id="operator" onclick="DisplayDigit('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="DisplayDigit('00')">
+                    <input type="button" value="0" onclick="DisplayDigit(0)">
+                    <input type="button" value="=" id="operator" class="equalTo" onclick="calculate()">
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>

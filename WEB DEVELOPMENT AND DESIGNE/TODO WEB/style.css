@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Monoton&family=Russo+One&family=Syne&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background: rgb(18, 29, 29);
+  background: -webkit-radial-gradient(center, rgb(18 101 101) 0%, rgb(0 0 0) 100%);
+  background: -moz-radial-gradient(center, rgba(48, 64, 64, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+  background: radial-gradient(ellipse at center, rgb(1 104 104) 0%, rgb(0 0 0) 100%);
+  font-family: 'Shadows Into Light', cursive;
+  min-height: 100vh;
+}
+
+button {
+  height: fit-content;
+  cursor: pointer;
+  color: #04202c;
+  background-color: #c9d1c8;
+}
+
+.app {
+  color: white;
+}
+
+section {
+  background: radial-gradient(ellipse at center, rgb(18 55 55) 0%, rgb(0 0 0 / 0%) 100%);
+  padding: 26px 73px;
+  border-bottom: 2px solid #aab12c;
+}
+
+
+input#name {
+  width: 41%;
+  height: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 23px;
+  color: rgb(187, 255, 0);
+  text-transform: capitalize;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+input#search {
+  width: 200px;
+  padding: 11px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  border: none;
+}
+
+input#search::placeholder {
+  font-weight: 700;
+}
+
+#date {
+  font-family: 'Russo One', sans-serif;
+  color: rebeccapurple;
+  letter-spacing: 3px;
+}
+
+.input_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px 10px;
+}
+
+
+.to_do_input input {
+  width: 250px;
+  font-family: inherit;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.to_do_input button {
+  color: #5b7065;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ff671b;
+  color: black;
+}
+
+.to_do_input button:hover {
+  background: #ff5500;
+}
+
+.to_do_input input::placeholder {
+  font-family: 'Syne', sans-serif;
+}
+
+.to_do_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 39px 11%;
+}
+
+
+.to_do_list i {
+  color: #c9d1c8;
+  cursor: pointer;
+}
+
+.to_do-list .fa-pen-to-square {
+  color: #5b7065;
+}
+
+.to_do_list button {
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* background-color: no; */
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.input_controller {
+  display: flex;
+  gap: 10px;
+}
+
+.input_controller textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  line-height: 1.4;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: monospace;
+  transition: all 0.30s ease-in-out;
+  text-transform: capitalize;
+}
+
+textarea:focus {
+  box-shadow: 0 0 5px white;
+}
+
+.edit_controller {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#checkbox {
+  cursor: pointer;
+}
+
+.update_controller {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .app {
+    /* width: 95%; */
+    text-align: center;
+  }
+
+  .input_header {
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  input#name {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    color: yellow;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  input#search {
+    margin-top: 8px;
+  }
+
+  .to_do_input {
+    display: flex;
+  }
+
+  .to_do_input input {
+    width: 200px;
+  }
+
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: fantasy;
+  letter-spacing: 2px;
+}
+
+.head img{
+  height: 50px;
+}

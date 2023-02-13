@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* background: rgb(17, 17, 17); */
+    box-sizing: border-box;
+}
+
+.containor {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+
+.video {
+    height: 80vh;
+}
+
+.video video {
+    width: 100%;
+    height: 80vh;
+}
+
+.overlapText {
+    position: absolute;
+    top: 25%;
+    right: 40%;
+    background: transparent;
+}
+
+.jobs {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    background: none;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+}
+
+.topText {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background: none;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 5px;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+img:hover,
+img:focus,
+img:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* //Second Content  */
+
+.main-containt {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-containt h1 {
+    text-align: center;
+    padding: 11px;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-containt h1 span {
+    color: #FF9100;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about h1 {
+    background-color: #000000;
+    color: #FF9100;
+    font-family: 'Bebas Neue', cursive;
+    margin: 14px 60px;
+    padding: 12px 24px;
+    font-size: 4rem;
+    box-shadow: inset 0px -2px 3px 1px;
+}
+
+.about p {
+    margin: 14px 60px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #000;
+    font-family: cursive;
+    font-size: 1.3rem;
+    box-shadow: 0px 4px 8px 0px;
+    ;
+}
+
+.about p span {
+    color: #FF9100;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .video {
+        height: 60vh;
+    }
+
+    .video video {
+        height: 60vh;
+    }
+
+    .overlapText {
+        display: none;
+    }
+
+
+
+    .main-containt h1 {
+        font-size: 2rem;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+        margin: 7px 13px;
+    }
+
+    .about p {
+        font-size: 1rem;
+        margin: 7px 13px;
+    }
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+footer p a {
+    text-decoration: none;
+    color: rgb(219, 8, 8);
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
