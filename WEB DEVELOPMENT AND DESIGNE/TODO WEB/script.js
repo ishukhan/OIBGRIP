@@ -2,7 +2,6 @@
 // LOCAL STORAGE
 const itemArry = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")) : []
 
-
 // THIS IS FOR USER TO SET YOUR OWN NAME
 function UserName() {
     const nameInput = document.querySelector("#name");
