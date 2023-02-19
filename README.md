@@ -8,3 +8,6 @@ INTERNSHIP AT OASIS INFOBYTE. Contains task assigned during my internship at Oas
 
 * TRIBUTE PAGE FOR STEVE JOB
 2. https://tributeforstevjobs.netlify.app/
+
+* TODO APP
+3.
