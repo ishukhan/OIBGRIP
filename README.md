@@ -17,3 +17,6 @@ INTERNSHIP AT OASIS INFOBYTE. Contains task assigned during my internship at Oas
 
 * UNIT CONVERTER
 1. https://github.com/ishukhan/Unit_Converter
+
+* STOP WATCH
+2. https://github.com/ishukhan/StopWatch
